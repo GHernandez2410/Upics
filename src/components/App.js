@@ -17,9 +17,15 @@ class App extends React.Component {
         this.setState({images : response.data.results });
     }
 
+    
+
     render(){
+        
+            
+        
+        
         return (
-            <div className="ui container" style={{marginTop: '10px'}}>  
+            <div className="ui container" style={{marginTop: '10'}} >  
                 <SearchBar cacona={this.onSearchSubmit} />
                 <ImageList images={this.state.images}/>
             </div>
